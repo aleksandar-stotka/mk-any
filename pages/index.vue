@@ -1,18 +1,18 @@
 <template>
-    <div>
-        <div v-for="p in data">
-            <p>{{ p.name }}</p>
+    <div class="pt-5">
+        <div v-for="p in data" :key="p.id">
+            <p > {{ p.title }}</p>
           
             
             
         </div>
-    
+    <p>ll</p>
     </div>
 </template>
 
 <script setup>
 const {data} = await useFetch("https://fakestoreapi.com/products")
-console.log(data,"fetchProducts")
+console.log(data.value,"fetchProducts")
 
 </script>
 
