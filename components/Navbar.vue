@@ -63,13 +63,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { links } from '~/links/link';
 
 const isOpen = ref(false)
 
-const links = [
-  { name: 'Home', to: '/' },
-  { name: 'About', to: '/about' },
-  { name: 'Services', to: '/services' },
-  { name: 'Contact', to: '/contact' },
-]
+
 </script>
